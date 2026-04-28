@@ -1,0 +1,21 @@
+[build]
+  # O diretório onde o comando de build deve ser executado
+  base = "coopstar"
+  
+  # O comando para gerar a build de produção
+  command = "npm run build"
+  
+  # O diretório que o Netlify deve servir após o build
+  publish = ".next"
+
+[build.environment]
+  # Define a versão do Node.js para garantir compatibilidade
+  NODE_VERSION = "20"
+
+[[plugins]]
+  # Plugin oficial do Netlify para suporte avançado ao Next.js (SSR, ISR, etc.)
+  package = "@netlify/plugin-nextjs"
+
+[functions]
+  # Necessário para funções serverless do Next.js (opcional, o plugin já gerencia a maioria)
+  node_bundler = "esbuild"

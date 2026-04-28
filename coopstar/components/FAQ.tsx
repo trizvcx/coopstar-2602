@@ -81,7 +81,7 @@ function FAQItem({ faq, isOpen, onToggle }: { faq: typeof faqs[0]; isOpen: boole
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
+            transition={{ duration: 0.3 }}
           >
             <div className="px-6 pb-5">
               <p className="text-[#333333] text-sm leading-relaxed border-t border-[#800020]/10 pt-4">

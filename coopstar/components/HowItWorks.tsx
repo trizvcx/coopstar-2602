@@ -88,7 +88,7 @@ export default function HowItWorks() {
                 key={step}
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
+                transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="relative flex flex-col items-center text-center group"
               >
                 {/* Ícone circular */}
